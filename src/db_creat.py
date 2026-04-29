@@ -27,8 +27,6 @@ def get_re_create_db(
     cur.execute(f"DROP DATABASE IF EXISTS {db_name};")
     cur.execute(f"CREATE DATABASE {db_name};")
 
-    print(f"База данных - '{db_name}' пересоздана.")
-
     cur.close()
     conn.close()
 

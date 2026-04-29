@@ -42,10 +42,10 @@ class DBManager:
             (country_name,),
         )
         new_row = cur.fetchone()
-        assert new_row is not None
-        new_id: int = int(new_row[0])
         cur.close()
-        return new_id
+
+        if new_row is None:
+            raise RuntimeError(f"Failed to insert country '{country_name}' and get its ID")
 
     def ensure_aircraft_country(self, country_code: Optional[str]) -> Optional[int]:
         if country_code is None:
