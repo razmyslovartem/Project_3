@@ -4,9 +4,12 @@
 Так он остаётся автономным.
 """
 
-from abc import ABC, abstractmethod
-from configparser import ConfigParser  # пока не используется, но пусть будет
-from typing import Any, Dict, Union
+from abc import ABC
+from abc import abstractmethod
+from configparser import ConfigParser
+from typing import Any
+from typing import Dict
+from typing import Union
 
 import requests
 

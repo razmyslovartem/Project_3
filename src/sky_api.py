@@ -3,9 +3,11 @@
 Клиент API самолётов из OpenSky
 """
 
-from abc import ABC, abstractmethod
+from abc import ABC
+from abc import abstractmethod
 from configparser import ConfigParser
-from typing import Dict, List
+from typing import Dict
+from typing import List
 
 import requests
 

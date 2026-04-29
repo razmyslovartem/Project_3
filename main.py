@@ -1,13 +1,15 @@
 # src/main.py
 """Файл основной логики точки входа."""
 
-import os
 from configparser import ConfigParser
-from typing import Any, Dict
+import os
+from typing import Any
+from typing import Dict
 
 from prettytable import PrettyTable
 
-from src.db_creat import create_tables_db, get_re_create_db
+from src.db_creat import create_tables_db
+from src.db_creat import get_re_create_db
 from src.db_use import DBManager
 from src.sky_data_adapter import SkyDataAdapter
 

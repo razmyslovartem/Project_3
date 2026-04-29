@@ -6,7 +6,10 @@
 - класс OpenSkyAircraftClient
 """
 
-from typing import Any, Dict, List, Optional
+from typing import Any
+from typing import Dict
+from typing import List
+from typing import Optional
 
 from src.geocoder import NominatimGeocoder
 from src.sky_api import OpenSkyAircraftClient
