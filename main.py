@@ -26,7 +26,7 @@ def get_flag_path(config_path: str) -> str:
 def load_countries_from_config(config_path: str) -> list:
     """
     Функция чтения данных из config/config.ini читает
-    секцию [app] и возвращает словарь данных со станами.
+    секцию [app] и возвращает словарь данных со странами.
     """
     config = ConfigParser()  # Пустой объект ConfigParser.
     config.read(config_path)  # Запись данных в объект.
